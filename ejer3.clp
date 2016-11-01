@@ -42,7 +42,7 @@
   =>
   (assert (tratamiento descanso-cama ?x))
   (assert (tratamiento tratamiento-ayuda ?x))
-  (printout t "Paciente " ?x " Tratamiento: descando en cama y tratamiento de ayuda" crlf))
+  (printout t "Paciente " ?x " Tratamiento: Descanso en cama y tratamiento de ayuda" crlf))
 
 
 (defrule tratamientoAlergia

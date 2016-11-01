@@ -1,4 +1,7 @@
-# codigo
+# ENCO - Práctica 3 - Diego Reiriz cores
+
+## codigo
+
 ```
 (deftemplate Paciente
  (slot id (type SYMBOL))
@@ -66,10 +69,11 @@
  (Paciente (fiebre baja) (sarpullido si) (id P4)))
 ```
 
-##### Cuestión 1: ¿Qué diagnostica el sistema para un paciente con fiebre baja y exantema?
+### Cuestión 1: ¿Qué diagnostica el sistema para un paciente con fiebre baja y exantema?
+
 Alergia.
 
-##### Cuestión 2: ¿Qué diagnostica el sistema para los siguientes pacientes?
+### Cuestión 2: ¿Qué diagnostica el sistema para los siguientes pacientes?
 
 Paciente P3 Diagnostico: Gripe Comun
 
@@ -79,12 +83,12 @@ Paciente P1 Diagnostico: Alergia
 
 Para el paciente 4 no tenemos conocimiento suficiente de su caso para diagnosticarle una enfermedad.
 
-##### Cuestión 3: ¿Qué tratamiento obtiene el sistema para los siguientes pacientes?
+### Cuestión 3: ¿Qué tratamiento obtiene el sistema para los siguientes pacientes?
 
 Paciente P3 Diagnostico: Gripe Comun
 
-Paciente P3 Tratamiento: descanso en cama
+Paciente P3 Tratamiento: Descanso en cama
 
 Paciente P2 Diagnostico: Sarampion
 
-Paciente P2 Tratamiento: descando en cama y tratamiento de ayuda
+Paciente P2 Tratamiento: Descanso en cama y tratamiento de ayuda

@@ -1,4 +1,6 @@
-#codigo
+# ENCO - Práctica 2 - Diego Reiriz Cores
+
+## Código
 
   (defrule R1
     (tiene-pelo ?x)
@@ -40,7 +42,7 @@
     (tiene-pezunas robbie)
     (tiene-rayas-negras robbie))
 
-#ciclos
+## Ciclos
 
 |Numero de ciclo|base de hechos|Agenda|
 |---------------|--------------|------|

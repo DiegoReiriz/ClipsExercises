@@ -1,3 +1,5 @@
+# ENCO - Práctica 4 - Diego Reiriz Cores
+
 ## 1 ¿Qué infiere el sistema para los siguientes pacientes?
 
 	(deffacts BHinicial
@@ -6,14 +8,13 @@
 	 (Paciente (fiebre moderada) (garganta-irritada si) (id P3))
 	 (Paciente (fiebre baja) (sarpullido si) (id P4)))
 
-Paciente P3 Diagnostico: Gripe Comun
+	Paciente P3 Diagnostico: Gripe Comun
 
-Paciente P2 Diagnostico: Sarampion
+	Paciente P2 Diagnostico: Sarampion
 
-Paciente P1 Diagnostico: Alergia
+	Paciente P1 Diagnostico: Alergia
 
-
-## 2  ¿Qué infiere el sistema para los siguientes pacientes?
+## 2 ¿Qué infiere el sistema para los siguientes pacientes?
 
 	(deffacts BHinicial
 	 (Paciente (temperatura 36.5) (exantema si) (id P1))
@@ -21,27 +22,27 @@ Paciente P1 Diagnostico: Alergia
 	 (Paciente (temperatura 38) (garganta-irritada si) (id P3))
 	 (Paciente (temperatura 37.3) (sarpullido si) (id P4)))
 
-Paciente 38 Fiebre: moderada
-
-Paciente P3 Diagnostico: Gripe Comun
-
-Paciente P3 Tratamiento: descanso en cama
-
-Paciente P2 Diagnostico: Alergia
-
-Paciente P2 Tratamiento: antihistamínicos
-
-Paciente 39.5 Fiebre: alta
-
-Paciente P2 Tratamiento: antihistamínicos
-
-Paciente P1 Diagnostico: Alergia
-
-Paciente P1 Tratamiento: antihistamínicos
-
-Paciente 36.5 Fiebre: no
-
-Paciente P1 Tratamiento: antihistamínicos
+	Paciente 38 Fiebre: moderada
+	
+	Paciente P3 Diagnostico: Gripe Comun
+	
+	Paciente P3 Tratamiento: descanso en cama
+	
+	Paciente P2 Diagnostico: Alergia
+	
+	Paciente P2 Tratamiento: antihistamínicos
+	
+	Paciente 39.5 Fiebre: alta
+	
+	Paciente P2 Tratamiento: antihistamínicos
+	
+	Paciente P1 Diagnostico: Alergia
+	
+	Paciente P1 Tratamiento: antihistamínicos
+	
+	Paciente 36.5 Fiebre: no
+	
+	Paciente P1 Tratamiento: antihistamínicos
 
 
 ## 3 ¿Qué sucede cuando ejecutamos (reset)? ¿De qué regla(s) habla CLIPS? ¿Qué valor tiene la temperatura del paciente inicialmente? ¿Qué condición puede estar fallando?
@@ -60,19 +61,19 @@ La que le introduzca por teclado
 
 ### 3.4
 
-¿Que no se comprueba el tipo del valor introducido por teclado en las reglas que lo usan?
+Fallan aquellas condiciones que utilicen test, ya que no se comprueba el tipo del valor que se ha introducido por teclado
 
-Entra la temperatura del paciente: 38
+	Entra la temperatura del paciente: 38
 
-Paciente P1 Diagnostico: Alergia
+	Paciente P1 Diagnostico: Alergia
 
-Paciente P1 Tratamiento: antihistamínicos
+	Paciente P1 Tratamiento: antihistamínicos
 
-Paciente P1 Fiebre: moderada
+	Paciente P1 Fiebre: moderada
 
-Paciente P1 Tratamiento: antihistamínicos
+	Paciente P1 Tratamiento: antihistamínicos
 
-#4  ¿En qué reglas debe añadirse? ¿En qué lugar del antecedente, como primera, segunda o tercera condición? ¿Qué sucede cuando ejecutamos (reset)?
+## 4  ¿En qué reglas debe añadirse? ¿En qué lugar del antecedente, como primera, segunda o tercera condición? ¿Qué sucede cuando ejecutamos (reset)?
 
 ### 4.1
 
@@ -86,14 +87,13 @@ Como segunda condición //despues de comprobar una caracteristica del paciente p
 
 Se inicializa un paciente con los valores por defecto y con la temperatura a nil. Ya que se instancia la plantilla en la base de hechos
 
+## 5 ¿Cuál es la traza que se debe seguir para hacer las preguntas? Indíquela
 
-### 5 ¿Cuál es la traza que se debe seguir para hacer las preguntas? Indíquela
-
-preguntar temperatura?
-preguntar exantema?
-preguntar vacunado sarampión?
-preguntar garganta irritada?
-preguntar sarpullido?
+1. preguntar temperatura?
+2. preguntar exantema?
+3. preguntar vacunado sarampión?
+4. preguntar garganta irritada?
+5. preguntar sarpullido?
 
 ## 6 : ¿Qué reglas debe añadir? Indíquelas. Pruébelas para la siguiente base de hechos inicial y diferentes valores de entrada de datos. En caso de que no se llegue a un diagnóstico, el sistema debe indicarlo en pantalla.
 
